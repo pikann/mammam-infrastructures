@@ -98,6 +98,7 @@ module "ecs_service" {
   security_group_ids                          = [module.security_group.id]
   aws_region                                  = var.aws_region
   cloudwatch_log_group_name                   = module.cloudwatch_log.name
+  ecs_cluster_name                            = var.ecs_cluster_name
 }
 
 module "s3" {

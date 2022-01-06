@@ -91,3 +91,9 @@ variable "cloudwatch_log_group_name" {
   default     = ""
   type        = string
 }
+
+variable "ecs_cluster_name" {
+  description = "The ECS cluster name."
+  default     = ""
+  type        = string
+}
