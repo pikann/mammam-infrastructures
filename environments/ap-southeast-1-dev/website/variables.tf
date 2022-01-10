@@ -196,12 +196,6 @@ variable "ecs_service_private_namespace_description" {
   type        = string
 }
 
-variable "vpc_id" {
-  description = "The VPC id"
-  default     = ""
-  type        = string
-}
-
 variable "ecs_service_name" {
   description = "The service name"
   default     = ""
@@ -225,6 +219,12 @@ variable "container_port" {
   default     = ""
   type        = string
 }
+
+variable "task_family_name" {
+  description = "The ECS task definition family name."
+  default     = ""
+  type        = string
+}
 # End ECS Service
 
 # S3
@@ -238,3 +238,11 @@ variable "photo_video_bucket_acl" {
   default     = ""
 }
 # End S3
+
+# ECR ML
+variable "ecr_ml_name" {
+  type = string
+  description = " Name of the repository."
+  default     = ""
+}
+# End ECR ML

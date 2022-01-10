@@ -1,5 +1,5 @@
 resource "aws_ecs_task_definition" "mammam_ecs_task_definition" {
-  family                   = "mammam-${var.environment_name}"
+  family                   = "${var.task_family_name}-${var.environment_name}"
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
   cpu         = 256
