@@ -62,7 +62,7 @@ task_family_name                            = "mammam"
 # End ECS service
 
 # S3
-photo_video_bucket_name        = "mammam-photo-video-bucket"
+photo_video_bucket_name        = "mammam-bucket"
 photo_video_bucket_acl         = "public-read"
 # End S3
 
