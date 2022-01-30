@@ -97,3 +97,9 @@ variable "ecs_cluster_name" {
   default     = ""
   type        = string
 }
+
+variable "task_family_name" {
+  description = "The ECS task definition family name."
+  default     = ""
+  type        = string
+}

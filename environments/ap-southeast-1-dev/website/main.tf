@@ -99,6 +99,7 @@ module "ecs_service" {
   aws_region                                  = var.aws_region
   cloudwatch_log_group_name                   = module.cloudwatch_log.name
   ecs_cluster_name                            = var.ecs_cluster_name
+  task_family_name                            = var.task_family_name
 }
 
 module "s3" {
@@ -106,4 +107,12 @@ module "s3" {
   source                                = "../../../modules/s3"
   photo_video_bucket_name               = var.photo_video_bucket_name
   photo_video_bucket_acl                = var.photo_video_bucket_acl
+}
+
+module "ecr_ml" {
+  environment_name                    = var.environment_name
+  source                              = "../../../modules/ecr"
+  ecr_name                            = var.ecr_ml_name
+  mutability                          = var.mutability
+  scan_on_push                        = var.scan_on_push
 }
