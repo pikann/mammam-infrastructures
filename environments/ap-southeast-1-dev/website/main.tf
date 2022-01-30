@@ -6,7 +6,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "dev-mammam-bucket-s3-state"
+    bucket = "dev-mammam-terraform-state"
     key    = "environments/ap-southeast-1-dev/website/terraform.tfstate"
     region = "ap-southeast-1"
   }
