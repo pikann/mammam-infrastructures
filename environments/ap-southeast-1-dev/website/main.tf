@@ -122,3 +122,11 @@ module "s3_site_admin" {
   source                                = "../../../modules/s3_site"
   bucket_name                           = var.admin_bucket_name
 }
+
+module "socket_ec2_instance" {
+  environment_name                    = var.environment_name
+  source                              = "../../../modules/ec2"
+  instance_name                       = var.socket_instance_name
+  security_group_ids                  = [module.security_group.id]
+  subnet_ids                          = module.vpc.subnet_ids
+}

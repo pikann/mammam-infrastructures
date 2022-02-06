@@ -253,3 +253,10 @@ variable "admin_bucket_name" {
   default     = ""
 }
 # End S3 admin
+
+# EC2 instance socket
+variable "socket_instance_name" {
+  description = "Socket instance name"
+  default     = ""
+}
+# End EC2 instance socket

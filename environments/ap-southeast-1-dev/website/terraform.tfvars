@@ -73,3 +73,7 @@ ecr_ml_name = "mammam-ml"
 # S3 admin
 admin_bucket_name = "admin.mammam.online"
 # End S3 admin
+
+# EC2 instance socket
+socket_instance_name = "socket-instance"
+# End EC2 instance socket
