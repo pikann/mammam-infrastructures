@@ -69,3 +69,7 @@ photo_video_bucket_acl         = "public-read"
 # ECR ML
 ecr_ml_name = "mammam-ml"
 # End ECR ML
+
+# S3 admin
+admin_bucket_name = "admin.mammam.online"
+# End S3 admin

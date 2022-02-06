@@ -246,3 +246,10 @@ variable "ecr_ml_name" {
   default     = ""
 }
 # End ECR ML
+
+# S3 admin
+variable "admin_bucket_name" {
+  description = "The bucket name."
+  default     = ""
+}
+# End S3 admin
