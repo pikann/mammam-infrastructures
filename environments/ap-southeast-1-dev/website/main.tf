@@ -116,3 +116,9 @@ module "ecr_ml" {
   mutability                          = var.mutability
   scan_on_push                        = var.scan_on_push
 }
+
+module "s3_site_admin" {
+  environment_name                      = var.environment_name
+  source                                = "../../../modules/s3_site"
+  bucket_name                           = var.admin_bucket_name
+}
